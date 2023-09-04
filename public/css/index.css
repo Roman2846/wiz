@@ -1,7 +1,320 @@
+/* :root {
+  background: purple;
+} */
+
 html {
-  max-width: 720px;
+  max-width: 1000px;
+
+  /* background: blue; */
 }
 
-body {
+/* body {
   background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+h1 {
+  color: blue;
+}
+
+.box {
+  background: #cfcece;
+}
+
+h1.botton {
+  background: red;
+  color: black;
+}
+
+h1,
+h2#user,
+button.button#button {
+  color: green;
+}
+
+#user,
+.user {
+  color: blue;
+}
+
+div > p {
+  color: paleturquoise;
+}
+
+footer > .user {
+  color: palevioletred;
+}
+
+footer > h1 {
+  color: palevioletred;
+}
+
+footer .child {
+  color: rgb(91, 240, 6);
+}
+
+.p-top {
+  background: black;
+}
+
+h1 ~ p,
+h1 ~ * > p {
+  background: black;
+} */
+
+/* .card-dark {
+  background: #e0dcdc;
+}
+
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:only-of-type {
+  color: red;
+}
+
+.item:nth-child(2) {
+  color: rgb(12, 213, 228);
+}
+
+p:not(.item) {
+  color: blueviolet;
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+}
+
+.input-dark {
+  background: #979696;
+}
+
+.input-dark[required] {
+  background: #e01111;
+}
+
+.input-dark[type='number'] {
+  background: #4cdb0a;
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+a[rel~='external'] {
+  color: green;
+}
+
+button[class|='btn'] {
+  background: rgb(170, 167, 167);
+}
+
+a[class^='btn'] {
+  background: rgb(226, 11, 11);
+}
+
+a[class^='big'] {
+  background: rgb(11, 15, 230);
+}
+
+.btn::first-letter {
+  color: red;
+}
+
+.big-text::first-line {
+  color: red;
+}
+
+.input-dark::placeholder {
+  color: green;
+}
+
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+  color: green;
+} */
+
+/* Завдання 3. Зробіть, щоб h1 мав Синій колір фону */
+h1 {
+  background: blue;
+}
+
+/* Завдання 4. Зробіть, щоб клас green мав текст зеленого кольору */
+[class='green'] {
+  color: green;
+}
+
+/* Завдання 5. Зробіть, щоб елемент з індинтифікатором blue мав синій колір тексту */
+[id='blue'] {
+  color: blue;
+}
+
+/* Завдання 6. Зробіть, щоб тег p мав червоний фон ,а тег div мав зелений фон */
+[class='box'].box p {
+  background: red;
+}
+
+.box div {
+  background: green;
+}
+
+/* Завдання 7. Задайте класу brown коричневий фон та білий колір тексту, використовуйте селектор класу */
+[class='brown'] {
+  color: white;
+  background: brown;
+}
+
+/* Завдання 8. Зробіть червоний фон для дочірніх елементів тега ul */
+ul > li {
+  background: red;
+}
+
+/* Завдання 9. Зробіть червоний фон для тегів, які є сестринськими відносно тега button з класом header-button */
+button[class='header-button'] + span {
+  background: red;
+}
+
+/* Завдання 10. Зробіть синій фон для всіх cусідських тегів <p>, тегу який має клас 'susid' , а текст білим застосувавши сусідський селектор */
+p[class='susid'] ~ p {
+  color: white;
+  background: blue;
+}
+
+/* Завдання 11. Зробіть жовтий  фон  для класу .salo та індетифікатора #bread */
+.salo,
+#bread {
+  background-color: yellow;
+}
+
+/* Урок 2 */
+
+/* Завдання №1: Для першого елементу списку зробіть колір тексту білим */
+[class='first-task'] li:first-child {
+  color: white;
+}
+
+/* Завдання №2:  Змінити колір тексту першого елемента списку в першому блоці ul на жовтий */
+[class='second-task'] ul:first-child li:first-child {
+  color: yellow;
+}
+
+/* Завдання №3:   Змінити фон першого елементу на жовтий в другому блоку ul */
+[class='third-task'] ul:last-child li:first-child {
+  background: yellow;
+}
+
+/* Завдання №4:  Змінити фон останнього елементу списку на жовтий. */
+[class='four-task'] ul li:last-child {
+  color: yellow;
+}
+
+/* Завдання №5: Змінити колір тексту останнього елемента списку в останньому блоці ul на білий */
+[class='five-task'] ul:last-child li:last-child {
+  color: white;
+}
+
+/* Завдання №6: Змінити колір тексту на червоний у блоках div, які єдині в своєму батьківському елементі section */
+[class='only-child-task'] div:only-child {
+  color: red;
+}
+
+/* Завдання №7:  Застосуйте червоний фон до першого абзацу в div з классом seven-task */
+[class='seven-task'] p:first-of-type {
+  background: red;
+}
+
+/* Завдання №8:  Застосуйте червоний фон до останнього абзацу в div з классом eight-task */
+[class='eight-task'] span:last-of-type {
+  background: red;
+}
+
+/* Завдання №9: Застосуйте жовтий фон для всіх <p> елементів, якщо в батьківському елементі більше не має <p>. */
+[class='nine-task'] p:only-of-type {
+  background: yellow;
+}
+
+/* Урок 3 */
+
+/* Завдання №1.  Зайдайте білий колір тексту всім посиланням які мають атрибут href */
+[class='lesson-three-task-one'] a[href] {
+  color: white;
+}
+
+/* Завдання №2. Зайдайте жовтий колір тексту всім елементам списку які мають атрибут value */
+[class='lesson-three-task-two'] li[value] {
+  color: yellow;
+}
+
+/* Завдання №3. Застосуйте селектор значення атрибута, щоб встановити червоний фон всім елементам списку які мають атрибут value зі значенням '3' */
+[class='lesson-three-task-three'] li[value='3'] {
+  background: red;
+}
+
+/* Завдання №4. Застосуйте селектор наявності значення атрибута, щоб встановити синій фон для кнопки з класом "primary" */
+[class='lesson-three-task-four']
+  button[class='primary action'] {
+  background: blue;
+}
+
+/* Завдання №5. Надайте червоний фон всім кнопка назви класу яких починаються зі слова secondary */
+[class='lesson-three-task-five']
+  button[class|='secondary'] {
+  background: red;
+}
+
+/* Завдання №6.  Застосуйте cелектор початку значення атрибута, щоб стилізувати тільки ті елементи списку, класи яких починаються на "b" та встановіть для них зелений колір тексту та білий фон. */
+[class='lesson-three-task-six'] li[class^='b'] {
+  color: green;
+  background: white;
+}
+
+/* Завдання №7. Застосуйте селектор кореня значення атрибута, щоб стилізувати тільки ті елементи списку, в назві класів яких зустрічається 'on' та встановіть для них зелений колір тексту та білий фон. */
+[class='lesson-three-task-seven'] li[class*='on'] {
+  color: green;
+  background: white;
+}
+
+/* Завдання №8. Напишіть CSS-код, який за допомогою конструкції селектор кінцівки значення атрибута виділить білим фоном та синім кольором тексту елементи, які мають в кінці назви класу літеру "s". */
+[class='lesson-three-task-eight'] span[class$='s'] {
+  color: blue;
+  background: white;
+}
+
+/* Завдання №9. Зробіть першу букву заголовків червоним кольором. */
+[class='lesson-three-task-nine'] h2::first-letter {
+  color: red;
+}
+
+/* Завдання №10. Задайте першому рядку жовтий фон. */
+[class='lesson-three-task-ten'] p::first-line {
+  background: yellow;
+}
+
+/* Завдання №11. Задайте червоний фон плейсхолдера для інпут-поля. */
+[class='lesson-three-task-eleven'] input::placeholder {
+  background: red;
+}
+
+/* Завдання №12. Додайте "➤" перед кожним елементом списку */
+[class='lesson-three-task-twelve'] li::before {
+  content: '➤';
+}
+
+/* Завдання №13. Додайте "➤" після кожного елемента списку */
+[class='lesson-three-task-thirteen'] li::after {
+  content: '➤';
 }
