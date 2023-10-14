@@ -17,12 +17,6 @@
   font-size: 17px;
 }
 
-.divider {
-  margin: 0;
-  height: 1px;
-  background: #dee2e6;
-}
-
 .nav {
   display: block;
 }
@@ -60,6 +54,7 @@
 
 .footer {
   padding: 24px 0;
+  border-top: 1px solid #dee2e6;
 }
 
 .footer_copyright {
