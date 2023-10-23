@@ -27,21 +27,23 @@
 			<div class="card_image" style="background-image: url({{photo}})"></div>
 			<h2 class="card_heading">{{heading}}</h2>
 			<p class="card_info">{{info}}</p>
-			<a class="card_buttonn" href="{{linkUrl}}">{{linkText}}</a>
+			<a class="cards_button" href="{{linkUrl}}">{{linkText}}</a>
 		</div>
 	{{/each}}
 </main>
 
-{{#each actions}}
-	<div class="actions">
-		<div class="actions_content">
-			<h3 class="actions_heading">{{heading}}</h3>
+<div class="actions">
+	{{#each actions}}
+		<div class="actions_main">
+			<div class="actions_content">
+				<h3 class="actions_heading">{{heading}}</h3>
+			</div>
+			<div class="actions_text">
+				<a href="{{url}}" class="button actions_button">{{text}}</a>
+			</div>
 		</div>
-		<div class="actions_text">
-			<a href="{{url}}" class="actions_button">{{text}}</a>
-		</div>
-	</div>
-{{/each}}
+	{{/each}}
+</div>
 
 <footer class="footer">
 	<div>

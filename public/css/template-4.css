@@ -150,6 +150,8 @@
 .card_button {
   color: var(--color-white);
   background-color: var(--color-primary);
+  width: 118px;
+  text-align: center;
 }
 
 .button:hover {
@@ -168,6 +170,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-l);
+  width: 100%;
 }
 
 .card_image {
@@ -188,13 +191,37 @@
   color: var(--color-text);
 }
 
-.card_buttonn {
+.cards_button {
   display: inline-block;
   font-size: var(--size-d);
   color: var(--color-primary);
 }
 
 .actions {
+  display: flex;
+  background: var(--color-primary);
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-l);
+  border-radius: var(--border-radius);
+}
+
+.actions_heading {
+  font-size: 24px;
+  font-weight: var(--weight-title);
+  color: var(--color-white);
+  padding: 0 0 12px;
+}
+
+.actions_button {
+  text-align: center;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  width: 100%;
+  max-width: 160px;
+}
+
+.actions_main {
   display: flex;
   flex-direction: column;
 }
