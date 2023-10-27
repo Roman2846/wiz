@@ -279,8 +279,6 @@
 }
 
 .image {
-  display: flex;
-  align-items: flex-start;
   width: 32px;
   height: 32px;
   gap: 8px;
@@ -288,17 +286,23 @@
 }
 
 .border {
+  display: inline;
   border-bottom: 1px solid var(--color-border);
   width: 912px;
 }
 
-.list:nth-of-type(2) div {
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.list:nth-of-type(2) a {
   background: var(--color-primary);
 }
-.list:nth-of-type(3) div {
+.list:nth-of-type(3) a {
   background: #e83e8c;
 }
-.list:nth-of-type(4) div {
+.list:nth-of-type(4) a {
   background: #6f42c1;
 }
 
