@@ -1,0 +1,361 @@
+<html>
+
+  <head>
+    <title>
+      Dashboard page
+    </title>
+    <meta charset='utf-8' />
+
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/fav/apple-touch-icon.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/fav/favicon-32x32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/fav/favicon-16x16.png'
+    />
+    <link rel='manifest' href='/fav/site.webmanifest' />
+    <link
+      rel='mask-icon'
+      href='/fav/safari-pinned-tab.svg'
+      color='#5bbad5'
+    />
+    <meta
+      name='msapplication-TileColor'
+      content='#da532c'
+    />
+    <meta name='theme-color' content='#ffffff' />
+
+    <link href='css/normalize.css' rel='stylesheet' />
+
+    <link href='css/dashboard.css' rel='stylesheet' />
+
+    <meta
+      name='viewport'
+      content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, user=scalable=no'
+    />
+  </head>
+
+  <body>
+    <div class='page page--dashboard'>
+      <aside
+        class='page__aside aside vertical vertical--big'
+      >
+        <div class='text aside__logo'>
+          Sidebar
+        </div>
+        <nav class='vertical home__aside vertical--small'>
+          <a
+            href='#'
+            class='nav-button nav-button--active click'
+          >
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/svg/feature/nav/home.svg)'
+            ></span>
+            <span class='text text--light'>Home</span>
+          </a>
+        </nav>
+
+        <nav class='vertical vertical--small'>
+          <a href='#' class='nav-button click'>
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/svg/feature/nav/table.svg)'
+            ></span>
+            <span class='text text--light'>Orders</span>
+          </a>
+        </nav>
+
+        <nav class='vertical vertical--small'>
+          <a href='#' class='nav-button click'>
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/svg/feature/nav/grid.svg)'
+            ></span>
+            <span class='text text--light'>Products</span>
+          </a>
+        </nav>
+      </aside>
+
+      <header class='header'>
+        <div class='layout header__content text--small'>
+          <div class='header__search relative'>
+            <input
+              type='text'
+              placeholder='Search'
+              class='text field field--header'
+            />
+            <span
+              class='icon header__icon-search'
+              style='background-image: url(/svg/feature/header/search.svg)'
+            ></span>
+            <span
+              class='icon icon--header-settings icon--button icon--color-blue click'
+              style='background-image: url(/svg/feature/header/settings.svg)'
+            ></span>
+          </div>
+
+          <div class='icon__header'>
+            <span
+              class='icon icon--header-signal icon--button icon--color-yellow click'
+              style='background-image: url(/svg/feature/header/signal.svg)'
+            ></span>
+
+            <span
+              class='icon icon--header-translate icon--button icon--color-blue-header click'
+              style='background-image: url(/svg/feature/header/translate.svg)'
+            ></span>
+
+            <span
+              class='icon icon--header-bell icon--button icon--color-yellow click'
+              style='background-image: url(/svg/feature/header/bell.svg)'
+            ></span>
+          </div>
+        </div>
+      </header>
+      <main class='main'>
+        <div class='layout'>
+          <section class='box analytic__block'>
+            <div
+              class='analytic analytic--double analytic--blue'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-blue click'
+                style='background-image: url(/svg/feature/analytic/order.svg)'
+              ></span>
+
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic__title text text--light'
+                >$961
+                </div>
+
+                <div
+                  class='text text--small text--gray'
+                >Total Order
+                </div>
+
+                <span
+                  class='icon analytic__arrow'
+                  style='background-image: url(/svg/feature/analytic/blue-arrow.svg)'
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class='analytic_2 analytic--double analytic--purple'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-purple click'
+                style='background-image: url(/svg/feature/analytic/money.svg)'
+              ></span>
+
+              <div
+                class='relative vertical vertical--small'
+              >
+                <div
+                  class='analytic__title text text--light'
+                >$500.00
+                </div>
+
+                <div
+                  class='text text--small text--gray'
+                >Total earning
+                </div>
+              </div>
+
+            </div>
+
+            <div class='analytic_3 analytic--blue'>
+              <span
+                class='icon analytic__button icon--button icon--color-blue click'
+                style='background-image: url(/svg/feature/analytic/money-2.svg)'
+              ></span>
+
+              <div class='relative vertical vertical--s'>
+                <div
+                  class='analytic__title_2 text text--light'
+                >$203k
+                </div>
+
+                <div
+                  class='text text--small text--gray'
+                >Total Income
+                </div>
+              </div>
+            </div>
+
+            <div class='analytic_3'>
+              <span
+                class='icon analytic__button icon--button icon--color-yellow click'
+                style='background-image: url(/svg/feature/analytic/shop.svg)'
+              ></span>
+
+              <div class='relative vertical vertical--s'>
+                <div class='analytic__title_2 text'>
+                  $203k
+                </div>
+
+                <div
+                  class='text text--small text--gray-m'
+                >Total Income
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <main class='main__double'>
+            <div class='purchase'>
+              <h1 class='purchase__title border'>
+                Purchase list
+              </h1>
+              <div class='purchase__info border'>
+                <div class='info text'>
+                  <p>ID437661</p>
+                  <span>May 11, 2023, 14:21</span>
+                </div>
+
+                <div class='info text'>
+                  <p>AirOn ProCam</p>
+                  <span>7/8 USB Type-C</span>
+                </div>
+
+                <div class='info text'>
+                  <p>132.32 EUR</p>
+                  <span class='not__paid'>Not paid</span>
+                </div>
+
+                <div class='info text'>
+                  <p>Customer</p>
+                  <span>robin@com.de</span>
+                </div>
+              </div>
+
+              <div class='purchase__info'>
+                <div class='info text'>
+                  <p>ID437661</p>
+                  <span>May 11, 2023, 14:21</span>
+                </div>
+
+                <div class='info text'>
+                  <p>PHILIPS Essential</p>
+                  <span>HD9200/90</span>
+                </div>
+
+                <div class='info text'>
+                  <p>543 USD</p>
+                  <span class='paid'>Pay by Stripe</span>
+                </div>
+
+                <div class='info text'>
+                  <p>Customer</p>
+                  <span>dima@com.ua</span>
+                </div>
+              </div>
+            </div>
+
+            <div class='payment vertical'>
+              <h1 class='payment__title border'>Payment</h1>
+              <div class='radio'>
+                <label class='payment__radio'>
+                  <input
+                    type='radio'
+                    class='text payment__radio'
+                    name='card'
+                    checked
+                  />
+                  Credit card
+                </label>
+
+                <label class='payment__radio'>
+                  <input
+                    type='radio'
+                    class='text payment__radio'
+                    name='card'
+                  />
+                  Debit card
+                </label>
+
+                <label class='payment__radio'>
+                  <input
+                    type='radio'
+                    class='text payment__radio'
+                    name='card'
+                  />
+                  PayPal
+                </label>
+              </div>
+
+              <div class='input__main'>
+                <div class='field__main'>
+                  <p class='text'>Name on card</p>
+                  <input type='text' class='field' />
+                </div>
+
+                <div class='field__main'>
+                  <p class='text'>Credit card number</p>
+                  <input type='text' class='field' />
+                </div>
+              </div>
+
+              <div class='input__main border'>
+                <div class='field__main'>
+                  <p class='text'>Expiration</p>
+                  <input type='text' class='field' />
+                </div>
+
+                <div class='field__main'>
+                  <p class='text'>CVV</p>
+                  <input type='text' class='field' />
+                </div>
+              </div>
+
+              <div class='payment__field border'>
+                <div class='field__main'>
+                  <p class='text'>Country</p>
+                  <div class='field field--select'>
+                    <span class='text'>Choose...</span>
+                    <span
+                      class='click check--mark'
+                      style='background-image: url(/svg/feature/analytic/check-mark.svg)'
+                    ></span>
+                  </div>
+                </div>
+
+                <div class='field__main'>
+                  <p class='text'>State</p>
+                  <div class='field field--select'>
+                    <span class='text'>Choose...</span>
+                    <span
+                      class='click check--mark'
+                      style='background-image: url(/svg/feature/analytic/check-mark.svg)'
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href='#'
+                class='payment__button text'
+              >Continue to checkout
+              </a>
+            </div>
+          </main>
+        </div>
+      </main>
+    </div>
+  </body>
+
+</html>
